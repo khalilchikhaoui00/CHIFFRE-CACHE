@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Chiffre Caché</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu du Chiffre Caché</h1>
+        
+        <div id="difficultySection">
+            <p>Choisissez la difficulté :</p>
+            <button id="facile">Facile</button>
+            <button id="intermediaire">Intermédiaire</button>
+            <button id="difficile">Difficile</button>
+        </div>
+
+        <div id="gameArea" class="hidden">
+            <p id="instructions"></p>
+            <input type="number" id="guessInput" placeholder="Entrez votre chiffre">
+            <button id="submitGuess">Soumettre</button>
+            <p id="feedback"></p>
+            <p id="attemptsLeft"></p>
+            <button id="resetButton">Réinitialiser</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script> 
+</body>
+</html>
